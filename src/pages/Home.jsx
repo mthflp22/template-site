@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -17,11 +18,15 @@ function Home() {
             </div>
             
             {/* Menu de Navegação */}
-            <nav className="flex space-x-6">
-              <a href="#quem-somos" className="text-white hover:text-green-500 transition-colors">Sobre</a>
-              <a href="#nossas-tecnologias" className="text-white hover:text-green-500 transition-colors">Tecnologias</a>
-              <a href="#nossos-projetos" className="text-white hover:text-green-500 transition-colors">Projetos</a>
-              <a href="#fale-conosco" className="text-white hover:text-green-500 transition-colors">Contato</a>
+            <nav className="hidden md:flex space-x-8">
+              <Link to="/" className="text-white hover:text-green-400">Home</Link>
+              <Link to="/sobre" className="text-white hover:text-green-400">Sobre</Link>
+              <Link to="/portfolio" className="text-white hover:text-green-400">Portfólio</Link>
+              <Link to="/blog" className="text-white hover:text-green-400">Blog</Link>
+              <Link to="/contato" className="text-white hover:text-green-400">Contato</Link>
+              <Link to="/calculadora" className="text-white hover:text-green-400">Calculadora</Link>
+              <Link to="/agendamento" className="text-white hover:text-green-400">Agendar</Link>
+              <Link to="/login" className="text-white hover:text-green-400">Login</Link>
             </nav>
           </div>
         </div>

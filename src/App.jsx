@@ -2,7 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Sobre from './pages/Sobre';
+import Blog from './pages/Blog';
 import Contato from './pages/Contato';
+import Login from './pages/Login';
+import Registro from './pages/Registro';
+import Calculadora from './pages/Calculadora';
+import Agendamento from './pages/Agendamento';
+import Portfolio from './pages/Portfolio';
+import PrivateRoute from './components/PrivateRoute';
 
 const Logo = () => (
   <svg
@@ -47,7 +54,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/registro" element={<Registro />} />
+          <Route path="/calculadora" element={<PrivateRoute><Calculadora /></PrivateRoute>} />
+          <Route path="/agendamento" element={<PrivateRoute><Agendamento /></PrivateRoute>} />
+          <Route path="/portfolio" element={<PrivateRoute><Portfolio /></PrivateRoute>} />
         </Routes>
       </div>
     </Router>
