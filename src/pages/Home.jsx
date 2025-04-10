@@ -39,7 +39,7 @@ function Home() {
             }}
           />
           <div className="relative z-10">
-            <h2 className="text-5xl font-extrabold mb-4 text-white animate-fade-in">RASPBERRY PI-NTO</h2>
+            <h2 className="text-5xl font-extrabold mb-4 text-white animate-fade-in">NTO - Tecnologia Industrial</h2>
             <p className="text-xl text-gray-300 animate-slide-up">Tecnologia que conecta. Inovação que impulsiona.</p>
           </div>
         </section>
